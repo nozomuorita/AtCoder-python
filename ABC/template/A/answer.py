@@ -13,3 +13,14 @@ inf = float('inf')
 mod1 = 10**9+7
 mod2 = 998244353
 def ceil_div(x, y): return -(-x//y)
+
+
+# define
+def y(): print('Yes')
+def n(): print('No')
+def mp(type=int):
+    return map(type, input().split())
+def li(type=int): return list(map(type, input().split()))
+
+a = li(str)
+print(a)
