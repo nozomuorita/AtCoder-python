@@ -6,6 +6,7 @@ for i in range(n):
 
 # 行が１増えると、値は7増える
 # 列が１増えると、値は１増える
+# かつ、各行について mod 7 をとったときに小さい順に並んでいるか判定
 # 上記条件に従うか判定
 
 # 行列Aが取りうる最大値と最小値
@@ -28,5 +29,18 @@ for i in range(n):
         if s - s_0 != dif:
             print('No')
             exit()
+
+# mod 7 が小さい順か判定
+for i in range(n):
+    tmp = []
+    for j in b[i]:
+        if j%7 == 0:
+            tmp.append(7)
+        else:
+            tmp.append(j%7)
+    tmp2 = sorted(tmp)
+    if tmp != tmp2:
+        print('No')
+        exit()
 
 print('Yes')
