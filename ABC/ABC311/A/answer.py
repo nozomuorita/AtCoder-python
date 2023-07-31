@@ -1,26 +1,18 @@
-from collections import defaultdict, deque, Counter
-import copy
-from itertools import combinations, permutations, product, accumulate, groupby, chain
-from heapq import heapify, heappop, heappush
-import math
-import bisect
-from pprint import pprint
-from random import randint
-import sys
-# sys.setrecursionlimit(700000)
-input = lambda: sys.stdin.readline().rstrip('\n')
-inf = float('inf')
-mod1 = 10**9+7
-mod2 = 998244353
-def ceil_div(x, y): return -(-x//y)
+n = int(input())
+s = input()
 
+a = 0
+b = 0
+c = 0
 
-# define
-def y(): print('Yes')
-def n(): print('No')
-def mp(type=int):
-    return map(type, input().split())
-def li(type=int): return list(map(type, input().split()))
-
-a = li(str)
-print(a)
+for i in range(len(s)):
+    if s[i]=='A':
+        a += 1
+    elif s[i]=='B':
+        b += 1
+    else:
+        c += 1
+        
+    if (a>=1) and (b>=1) and (c>=1):
+        print(i+1)
+        exit()
