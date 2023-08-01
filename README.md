@@ -7,11 +7,12 @@
 <h1>ディレクトリ構成</h1>
 <ul>
     <li>ABC : AtCoder Beginner Contest提出コード</li>
+    <li>ARC : AtCoder Regular Contest提出コード</li>
 </ul>
 
 <h1>ファイル構成</h1>
 <ul>
-    <li>ABC
+    <li>ABC, ARC
         <ul>
             <li>answer.py : 提出コード</li>
             <li>command.txt : 実行コマンド</li>
