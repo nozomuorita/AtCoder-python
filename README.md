@@ -1,7 +1,7 @@
 <h1>概要</h1>
     <p>
-        AtCoderの提出コードを管理<br>
-        学習時の考察・メモ保存
+        <a href='https://atcoder.jp/?lang=ja'>AtCoder</a>の提出コードを管理<br>
+        学習時の考察・メモを保存
     </p>
 
 <h1>ディレクトリ構成</h1>
