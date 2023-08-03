@@ -32,7 +32,7 @@
 <h1>Activities</h1>
     <ul>
         <li><a href='https://atcoder.jp/users/nzm_ort'>AtCoder</a></li>
-        <li><a href='https://atcoder.jp/users/nzm_ort'>X（Twitter）</a></li>
+        <li><a href='https://twitter.com/account_0818'>X（Twitter）</a></li>
         <li><a href='https://github.com/nozomuorita'>github</a></li>
         <li><a href='https://qiita.com/nzmort1'>Qiita</a></li>
     </ul>
