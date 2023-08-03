@@ -28,3 +28,11 @@
         input.txt の値を用いてanswer.pyを実行し、結果を返す<br>
         実行コマンドのパスは適宜変更
     </p>
+
+<h1>Activities</h1>
+    <ul>
+        <li><a href='https://atcoder.jp/users/nzm_ort'>AtCoder</a></li>
+        <li><a href='https://atcoder.jp/users/nzm_ort'>X（Twitter）</a></li>
+        <li><a href='https://github.com/nozomuorita'>github</a></li>
+        <li><a href='https://qiita.com/nzmort1'>Qiita</a></li>
+    </ul>
