@@ -1,41 +1,42 @@
-# 前半と公判を何回入れ替えたかを数えておく
-# no submit
+# 前半と後半をが入れ替わるかどうかをboolで管理
 
 n = int(input())
-s = input()
+s = list(input())
 q = int(input())
-s_list = []
 
-for i in range(len(s)):
-    s_list.append([i, s[i]])
-
-f = False # 前後半を入れ替えるか
+# クエリ２が起きるごとに反転(Trueなら前後半逆とする)
+f = False
 
 for i in range(q):
     t, a, b = map(int, input().split())
 
-    if t == 1:
+    if t==1:
         a -= 1
         b -= 1
-        s_list[a][1], s_list[b][1] = s_list[b][1], s_list[a][1]
 
+        # fがTrueなら、前後半入れ替えである
+        # aとbを入れ替え後のインデックスに置き換える
+        if f:
+            # 前後半入れ替え
+            if a<=(n-1):
+                a += n
+            else:
+                a -= n
+            if b<=(n-1):
+                b += n
+            else:
+                b -= n
+
+        # swap
+        s[a], s[b] = s[b], s[a]
+
+    # クエリ２のときはfを反転する
     else:
         f = not(f)
 
+# 最後にfがTrueなら反転して出力
 if f:
-    ans = ''
-    for i in range(n, 2*n):
-        ans += s_list[i][1]
-
-    for i in range(n):
-        ans += s_list[i][1]
+    ans = ''.join(s[n:]) + ''.join(s[:n])
+    print(ans)
 else:
-    ans = ''
-    for i in range(n):
-        ans += s_list[i][1]
-
-    for i in range(n, 2*n):
-        ans += s_list[i][1]
-
-print(ans)
-   
+    print(''.join(s))
