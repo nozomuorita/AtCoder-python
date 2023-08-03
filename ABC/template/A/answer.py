@@ -1,26 +1,17 @@
+# @nzm_ort
+# https://github.com/nozomuorita/atcoder-workspace-python
+
+# import module ------------------------------------------------------------------------------
 from collections import defaultdict, deque, Counter
-import copy
+import math
 from itertools import combinations, permutations, product, accumulate, groupby, chain
 from heapq import heapify, heappop, heappush
-import math
 import bisect
-from pprint import pprint
-from random import randint
 import sys
-# sys.setrecursionlimit(700000)
-input = lambda: sys.stdin.readline().rstrip('\n')
+# sys.setrecursionlimit(100000000)
 inf = float('inf')
 mod1 = 10**9+7
 mod2 = 998244353
-def ceil_div(x, y): return -(-x//y)
+def ceil_div(x, y): return -(-x//y) # 切り上げ
 
-
-# define
-def y(): print('Yes')
-def n(): print('No')
-def mp(type=int):
-    return map(type, input().split())
-def li(type=int): return list(map(type, input().split()))
-
-a = li(str)
-print(a)
+# main code ------------------------------------------------------------------------------------
