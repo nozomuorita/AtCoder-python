@@ -1,0 +1,8 @@
+This is a "global.code-snippets".
+When a prefix is entered, the content of body is completed.
+
+prefix: "mp", body: "map(int, input().split())",
+prefix: "mps", body: "map(str, input().split())",
+prefix: "lmp", body: "list(map(int, input().split()))",
+prefix: "lmps", body: "list(map(str, input().split()))"
+prefix: "repin", "body": "for i in range(n):"
