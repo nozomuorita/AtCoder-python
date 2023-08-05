@@ -1,0 +1,4 @@
+公式解説参照
+https://atcoder.jp/contests/abc117/tasks/abc117_c/editorial
+https://www.youtube.com/watch?v=OOtz0Lx_mRk
+
