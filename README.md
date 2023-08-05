@@ -1,13 +1,13 @@
 <h1>Overview</h1>
     <p>
         This repository manages my <a href='https://atcoder.jp/?lang=ja'>AtCoder</a> submission codes.<br>
-        学習時の考察・メモを保存
+        Considerations and notes from the study are saved.
     </p>
 
 <h1>Directory structure</h1>
 <ul>
-    <li>ABC : AtCoder Beginner Contest提出コード</li>
-    <li>ARC : AtCoder Regular Contest提出コード</li>
+    <li>ABC : "AtCoder Beginner Contest" Submission Code</li>
+    <li>ARC : "AtCoder Regular Contest" Submission Code</li>
 </ul>
 
 <h1>File configuration</h1>
@@ -24,9 +24,8 @@
 
 <h1>Execution</h1>
     <p>
-        command.txt をコピペし、ターミナルで実行<br>
-        input.txt の値を用いてanswer.pyを実行し、結果を返す<br>
-        実行コマンドのパスは適宜変更
+        Copy and paste command.txt and run it in a terminal, it will be executed using the input in input.txt.<br>
+        ※Change the path of the executable command as appropriate.
     </p>
 
 <h1>Activities</h1>
