@@ -12,10 +12,6 @@ import sys
 inf = float('inf')
 mod1 = 10**9+7
 mod2 = 998244353
-def ceil_div(x, y): return -(-x//y) # 切り上げ
+def ceil_div(x, y): return -(-x//y)
 
 # main code ------------------------------------------------------------------------------------
-n, m = map(int, input().split())
-
-ans = (n*(n-1))/2 + (m*(m-1))/2
-print(int(ans))
