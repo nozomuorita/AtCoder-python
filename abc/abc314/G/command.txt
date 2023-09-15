@@ -1,0 +1,1 @@
+Get-Content .\G\input.txt | python .\G\answer.py
