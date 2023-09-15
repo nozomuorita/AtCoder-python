@@ -1,1 +1,0 @@
-Get-Content .\C\input.txt | python .\C\answer.py
