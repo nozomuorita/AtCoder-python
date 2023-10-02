@@ -1,1 +1,0 @@
-Get-Content ./input.txt | python ./answer.py
