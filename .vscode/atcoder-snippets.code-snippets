@@ -1,0 +1,202 @@
+{
+	// Place your atcoder-workspace-python ワークスペース snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"help": {
+		"prefix": "help_function",
+		"body": [
+			"#約数列挙: make_divisors()",
+			"#UnionFind: unionfind",
+		]
+	},
+
+	"int_input": {
+		"prefix": "intinput",
+		"body": [
+			"int(input())",
+			"$1",
+		],
+	},
+	"map_input": {
+		"prefix": "mp",
+		"body": [
+			"map(int, input().split())$1",
+		],
+	},
+	"map_input_str": {
+		"prefix": "mps",
+		"body": [
+			"map(str, input().split())$1",
+		],
+	},
+	"list_map_input": {
+		"prefix": "lmp",
+		"body": [
+			"list(map(int, input().split()))$1",
+		],
+	},
+	"list_map_input_str": {
+		"prefix": "lmps",
+		"body": [
+			"list(map(str, input().split()))$1",
+		],
+	},
+	"rep(i,n)": {
+		"prefix": "repin",
+		"body": [
+			"for i in range(n):",
+			"\t$1"
+		]
+	},
+	"yes": {
+		"prefix": "yes",
+		"body": [
+			"print('Yes')",
+		]
+	},
+	"no": {
+		"prefix": "no",
+		"body": [
+			"print('No')",
+		]
+	},
+	"modules": {
+		"prefix": "modules",
+		"body": [
+			"from collections import defaultdict, deque, Counter",
+			"import math",
+			"from itertools import combinations, permutations, product, accumulate, groupby, chain",
+			"from heapq import heapify, heappop, heappush",
+			"from bisect import bisect_left, bisect_right, insort_left, insort_right",
+			"import sys",
+			"# sys.setrecursionlimit(100000000)",
+			"inf = float('inf')",
+			"mod1 = 10**9+7",
+			"mod2 = 998244353",
+			"def ceil_div(x, y): return -(-x//y)",
+			"",
+			"$1"
+		]
+	},
+	"mod1": {
+		"prefix": "mod1",
+		"body": [
+			"mod = 998244353",
+		]
+	},
+	"mod2": {
+		"prefix": "mod2",
+		"body": [
+			"mod = 10**9+7",
+		]
+	},
+	"ceil_div": {
+		"prefix": "ceil_dic_func",
+		"body": [
+			"def ceil_div(x, y): return -(-x//y)",
+		]
+	},
+	"dfs": {
+		"prefix": "dfs",
+		"body": [
+			"import sys",
+			"sys.setrecursionlimit(100000000)",
+		]
+	},
+	"heapq": {
+		"prefix": "heapq",
+		"body": [
+			"from heapq import heapify, heappop, heappush",
+		]
+	},
+	"bisect": {
+		"prefix": "bisect",
+		"body": [
+			"from bisect import bisect_left, bisect_right, insort_left, insort_right",
+		]
+	},
+	"make_divisors": {
+		"prefix": "make_divisors",
+		"body": [
+			"def make_divisors(n):",
+			"\tlower_divisors , upper_divisors = [], []",
+			"\ti = 1",
+			"\twhile i*i <= n:",
+				"\t\tif n % i == 0:",
+					"\t\t\tlower_divisors.append(i)",
+					"\t\t\tif i != n // i:",
+						"\t\t\t\tupper_divisors.append(n//i)",
+				"\t\ti += 1",
+			"\treturn lower_divisors + upper_divisors[::-1]",		
+		]
+	},
+	"unionfind": {
+		"prefix": "unionfind",
+		"body": [
+			"from collections import defaultdict",
+			"class UnionFind():",
+				"\tdef __init__(self, n):",
+					"\t\tself.n = n",
+					"\t\tself.parents = [-1] * n",
+				"\t# 要素xが属するグループの根(親)を返す",
+				"\tdef find(self, x):",
+					"\t\tif self.parents[x] < 0:",
+						"\t\t\treturn x",
+					"\t\telse:",
+						"\t\t\tself.parents[x] = self.find(self.parents[x])",
+						"\t\t\treturn self.parents[x]",
+				"\t# 要素xと要素yを結合",
+				"\tdef union(self, x, y):",
+					"\t\tx = self.find(x)",
+					"\t\ty = self.find(y)",
+					"\t\tif x == y:",
+						"\t\t\treturn",
+					"\t\tif self.parents[x] > self.parents[y]:",
+						"\t\t\tx, y = y, x",
+					"\t\tself.parents[x] += self.parents[y]",
+					"\t\tself.parents[y] = x",
+				"\t# 要素xが属するグループの要素数を返す",
+				"\tdef size(self, x):",
+					"\t\treturn -self.parents[self.find(x)]",
+				"\t# 要素xと要素yが同じグループに属するかを返す",
+				"\tdef same(self, x, y):",
+					"\t\treturn self.find(x) == self.find(y)",
+				"\t# 要素xが属するグループのメンバーをリストで返す",
+				"\tdef members(self, x):",
+					"\t\troot = self.find(x)",
+					"\t\treturn [i for i in range(self.n) if self.find(i) == root]",
+				"\t# 全ての根の要素をリストで返す",
+				"\tdef roots(self):",
+					"\t\treturn [i for i, x in enumerate(self.parents) if x < 0]",
+				"\t# グループの数(連結成分数)を返す",
+				"\tdef group_count(self):",
+					"\t\treturn len(self.roots())",
+				"\t# 辞書型を返す",
+				"\t# キーは，グループのルート要素",
+				"\t# 値は，そのルート要素に含まれるメンバーのリスト",
+				"\tdef all_group_members(self):",
+					"\t\tgroup_members = defaultdict(list)",
+					"\t\tfor member in range(self.n):",
+						"\t\t\tgroup_members[self.find(member)].append(member)",
+					"\t\treturn group_members",
+				"\t# ルート要素: [そのグループに含まれる要素のリスト]を文字列で返す",
+				"\tdef __str__(self):",
+					"\t\treturn '\\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())",		
+				]
+	},
+
+
+}
