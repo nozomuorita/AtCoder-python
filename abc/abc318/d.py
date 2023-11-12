@@ -1,15 +1,34 @@
-from collections import defaultdict
+import sys
+sys.setrecursionlimit(100000000)
 
 n = int(input())
-visited = [False] * n
-ans = -1
+d = [[0]*(i+1) + list(map(int, input().split())) for i in range(n-1)]
+ans = 0
 
-g = defaultdict(int)
-for i in range(n-1):
-    tmp = list(map(int, input().split()))
-    tmp_n = i+1
-    for j in tmp:
-        g[(i, tmp_n)] = j
-        tmp_n += 1
-print(g)
+used = [False]*n
+
+def dfs(lst, score):
+    global ans
+    if all(lst):
+        ans = max(ans, score)
+        return 0
+        
+    v = lst.index(False)
+    lst[v] = True
+    for v2 in range(v+1, n):
+        if lst[v2]: continue
+        score += d[v][v2]
+        lst[v2] = True
+        dfs(lst, score)
+        lst[v2] = False
+        score -= d[v][v2]
+    lst[v] = False
     
+if n%2==0: dfs(used, 0)
+else:
+    for i in range(n):
+        used[i] = True
+        dfs(used, 0)
+        used[i] = False
+    
+print(ans)
