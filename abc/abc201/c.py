@@ -34,3 +34,19 @@ for i in range(10000):
 
 print(ans)
         
+        
+# 他者コード
+# S = input()
+
+# ans = 0
+# for n in range(0, 10000):
+#     s = str(n).zfill(4)
+#     for i in range(10):
+#         t = S[i]
+#         if t == 'o' and s.find(str(i)) == -1:
+#             break
+#         if t == 'x' and s.find(str(i)) != -1:
+#             break
+#     else:
+#         ans += 1
+# print(ans)

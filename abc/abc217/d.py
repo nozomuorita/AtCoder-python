@@ -145,16 +145,13 @@ for _ in range(q):
         
 # 別解
 # from sortedcontainers import SortedList
-
 # l, q = map(int, input().split())
-# sl = SortedList([0, l])
+# cut = SortedList([0, l])
 
-# for q in range(q):
+# for i in range(q):
 #     c, x = map(int, input().split())
-#     if c == 1:
-#         sl.add(x)
-#     elif c == 2:
-#         idx = sl.bisect_left(x)
-#         left = sl[idx-1]
-#         right = sl[idx]
-#         print(right-left)
+#     if c==1:
+#         cut.add(x)
+#     else:
+#         idx = cut.bisect_left(x)
+#         print(cut[idx]-cut[idx-1])
