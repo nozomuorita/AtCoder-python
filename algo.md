@@ -3,8 +3,9 @@ Status: 初めて解いたときの状況<br>
 体感難易度: 1~10の10段階(大雑把に解いた時の自分の感覚で評価)、適宜更新<br>
 <ul>
 	<li>1: 脳死</li>
-	<li>3: 問題を見て解法(方針)が浮かび、実装も苦ではなかったとき</li>
-	<li>4: まあ、実装(AC)はできるかな程度(想定解とあってるかは考慮しない)</li>
+	<li>2: 問題を見て解法(方針)が浮かび、実装も苦ではなかったとき</li>
+	<li>3: まあ、実装(AC)はできるかな程度(想定解とあってるかは考慮しない)</li>
+	<li>4: 解法は浮かんだが、実装(の仕方)に少し苦労</li>
 	<li>5: 使うアルゴリズムや方針を言われたら「あ～」となる(わかる)</li>
 	<li>6: 解説を読んだら理解できて、自力実装できる</li>
 	<li>7: 解説見てやることはわかったが実装に苦労</li>
@@ -21,6 +22,8 @@ Status: 初めて解いたときの状況<br>
 	<li><a href="#dp-count">数え上げ</a></li>
 </ul>
 
+<h2><a href="#graph">グラフ系</a></h2>
+
 <h2><a href="#consideration">考察系</a></h2>
 
 <h2><a href="#math">数学的問題</a></h2>
@@ -34,6 +37,7 @@ Status: 初めて解いたときの状況<br>
 	<li><a href="#merge-tech">マージテク</a></li>
 	<li><a href="#imos">いもす法</a></li>
 	<li><a href="#string">文字列操作</a></li>
+	<li><a href="#dict">辞書順系</a></li>
 </ul>
 
 
@@ -53,7 +57,16 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_c">三井住友信託銀行プログラミングコンテスト2019 C</a>|253|100 to 105|方針を見てAC|5|2023-11-21
-|<a href="https://atcoder.jp/contests/abc189/tasks/abc189_d">ABC189 D</a>|769|Logical Expression|一発自力AC|3|2023-11-21
+|<a href="https://atcoder.jp/contests/abc189/tasks/abc189_d">ABC189 D</a>|769|Logical Expression|一発自力AC|2|2023-11-21
+
+<h1 id="graph">グラフ系</h1>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>|193|Count Connected Components|一発自力AC|2|2023-11-22
+|<a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>|663|Change Usernames|なんとかAC|4|2023-11-22
+|<a href="https://atcoder.jp/contests/abc284/tasks/abc284_e">ABC284 E</a>|1043|Count Simple Paths|なんとかAC|4|2023-11-23
+
 
 <h1 id="consideration">考察系</h1>
 
@@ -74,7 +87,7 @@ Status: 初めて解いたときの状況<br>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|<a href="https://atcoder.jp/contests/abc329/tasks/abc329_c">ABC329 C</a>|205|Count xxx|コンテスト自力AC|4|2023-11-21
+|<a href="https://atcoder.jp/contests/abc329/tasks/abc329_c">ABC329 C</a>|205|Count xxx|コンテスト自力AC|3|2023-11-21
 
 <h2 id="merge-tech">マージテク</h2>
 
@@ -86,14 +99,19 @@ Status: 初めて解いたときの状況<br>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|<a href="https://atcoder.jp/contests/abc221/tasks/abc221_d">ABC221 D</a>|832|Online games|自力一発AC|3|2023-11-22
+|<a href="https://atcoder.jp/contests/abc221/tasks/abc221_d">ABC221 D</a>|832|Online games|自力一発AC|2|2023-11-22
 
 <h2 id="string">文字列操作</h2>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|<a href="https://atcoder.jp/contests/abc221/tasks/abc283_d">ABC283 D</a>|453|Scope|自力一発AC|4|2023-11-22
+|<a href="https://atcoder.jp/contests/abc283/tasks/abc283_d">ABC283 D</a>|453|Scope|自力一発AC|3|2023-11-22
 
+<h2 id="dict">辞書順系</h2>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc285/tasks/abc285_c">ABC285 C</a>|157|abc285_brutmhyhiizp|自力一発AC|2|2023-11-23
 
 
 
@@ -106,5 +124,6 @@ Status: 初めて解いたときの状況<br>
 各アルゴリズムの最も基本となる問題
 <h2>グラフアルゴリズム</h2>
 <ul>
-	<li><a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>：閉路数カウント（単純無効グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>：連結成分数カウント（単純無効グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>：閉路検出（単純無効グラフ）→DFS, BFS, UnionFind</li>
 </ul>
