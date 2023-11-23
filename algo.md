@@ -19,6 +19,7 @@ Status: 初めて解いたときの状況<br>
 <h2><a href="#brute-force">全探索</a></h2>
 <h2><a href="#dp">DP</a></h2>
 <ul>
+	<li><a href="#dp-basic">基礎</a></li>
 	<li><a href="#dp-count">数え上げ</a></li>
 </ul>
 
@@ -37,6 +38,10 @@ Status: 初めて解いたときの状況<br>
 	<li><a href="#merge-tech">マージテク</a></li>
 	<li><a href="#imos">いもす法</a></li>
 	<li><a href="#string">文字列操作</a></li>
+	<ul>
+		<li><a href="#kakko">カッコ列系</a></li>
+		<li><a href="#rotate">回文系</a></li>
+	</ul>
 	<li><a href="#dict">辞書順系</a></li>
 </ul>
 
@@ -52,6 +57,12 @@ Status: 初めて解いたときの状況<br>
 
 
 <h1 id="dp">DP</h1>
+<h2 id="dp-basic">基礎</h2>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc286/tasks/abc286_d">ABC286 D</a>|607|Money in Hand|一発自力AC|2|2023-11-24
+
 <h2 id="dp-count">数え上げ</h2>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
@@ -66,6 +77,7 @@ Status: 初めて解いたときの状況<br>
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>|193|Count Connected Components|一発自力AC|2|2023-11-22
 |<a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>|663|Change Usernames|なんとかAC|4|2023-11-22
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_e">ABC284 E</a>|1043|Count Simple Paths|なんとかAC|4|2023-11-23
+|<a href="https://atcoder.jp/contests/abc286/tasks/abc286_e">ABC286 E</a>|1128|Souvenir|なんとかAC|4|2023-11-24
 
 
 <h1 id="consideration">考察系</h1>
@@ -102,10 +114,19 @@ Status: 初めて解いたときの状況<br>
 |<a href="https://atcoder.jp/contests/abc221/tasks/abc221_d">ABC221 D</a>|832|Online games|自力一発AC|2|2023-11-22
 
 <h2 id="string">文字列操作</h2>
+<h3 id="kakko">カッコ列系</h3>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc283/tasks/abc283_d">ABC283 D</a>|453|Scope|自力一発AC|3|2023-11-22
+
+<h3 id="rotate">回文系</h3>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc286/tasks/abc286_c">ABC286 C</a>|565|Rotate and Palindrome|自力一発AC|2|2023-11-24
+
+
 
 <h2 id="dict">辞書順系</h2>
 
@@ -126,4 +147,8 @@ Status: 初めて解いたときの状況<br>
 <ul>
 	<li><a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>：連結成分数カウント（単純無効グラフ）→DFS, BFS, UnionFind</li>
 	<li><a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>：閉路検出（単純無効グラフ）→DFS, BFS, UnionFind</li>
+</ul>
+<h2>DP</h2>
+<ul>
+	<li><a href="https://atcoder.jp/contests/abc286/tasks/abc286_d">ABC286 D</a>：基礎DP（コイン問題）</li>
 </ul>
