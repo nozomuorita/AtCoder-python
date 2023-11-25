@@ -25,7 +25,7 @@ Status: 初めて解いたときの状況<br>
 
 <h2><a href="#graph">グラフ系</a></h2>
 
-<h2><a href="#consideration">考察系</a></h2>
+<h2><a href="#consideration">考察系(テクニック)</a></h2>
 
 <h2><a href="#math">数学的問題</a></h2>
 <ul>
@@ -41,6 +41,7 @@ Status: 初めて解いたときの状況<br>
 	<ul>
 		<li><a href="#kakko">カッコ列系</a></li>
 		<li><a href="#rotate">回文系</a></li>
+		<li><a href="#string-other">その他</a></li>
 	</ul>
 	<li><a href="#dict">辞書順系</a></li>
 </ul>
@@ -62,6 +63,7 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_d">ABC286 D</a>|607|Money in Hand|一発自力AC|2|2023-11-24
+|<a href="https://atcoder.jp/contests/abc266/tasks/abc266_d">ABC266 D</a>|840|Snuke Panic (1D)|一発自力AC|3|2023-11-25
 
 <h2 id="dp-count">数え上げ</h2>
 
@@ -75,15 +77,19 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>|193|Count Connected Components|一発自力AC|2|2023-11-22
+|<a href="https://atcoder.jp/contests/abc288/tasks/abc288_c">ABC288 C</a>|436|Don’t be cycle|一発自力AC|2|2023-11-24
+|<a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC287 C</a>|466|Path Graph?|一発自力AC|2|2023-11-24
 |<a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>|663|Change Usernames|なんとかAC|4|2023-11-22
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_e">ABC284 E</a>|1043|Count Simple Paths|なんとかAC|4|2023-11-23
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_e">ABC286 E</a>|1128|Souvenir|なんとかAC|4|2023-11-24
 
 
-<h1 id="consideration">考察系</h1>
+<h1 id="consideration">考察系(テクニック)</h1>
 
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc287/tasks/abc287_d">ABC287 D</a>|796|Match or Not|自力AC|2|2023-11-24
+|<a href="https://atcoder.jp/contests/abc287/tasks/abc287_e">ABC287 E</a>|1093|Karuta|解説見てAC|5|2023-11-24
 |<a href="https://atcoder.jp/contests/abc329/tasks/abc329_e">ABC329 E</a>|1539|Stamp|解説見てなんとかAC|7|2023-11-21
 
 <h1 id="math">数学的問題</h1>
@@ -126,6 +132,11 @@ Status: 初めて解いたときの状況<br>
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_c">ABC286 C</a>|565|Rotate and Palindrome|自力一発AC|2|2023-11-24
 
+<h3 id="string-other">その他</h3>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc287/tasks/abc287_d">ABC287 D</a>|796|Match or Not|自力AC|2|2023-11-24
 
 
 <h2 id="dict">辞書順系</h2>
@@ -145,8 +156,10 @@ Status: 初めて解いたときの状況<br>
 各アルゴリズムの最も基本となる問題
 <h2>グラフアルゴリズム</h2>
 <ul>
-	<li><a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>：連結成分数カウント（単純無効グラフ）→DFS, BFS, UnionFind</li>
-	<li><a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>：閉路検出（単純無効グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc284/tasks/abc284_c">ABC284 C</a>：連結成分数カウント（単純無向グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>：閉路検出（単純無向グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC287 C</a>：パスグラフ判定（単純無向グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC288 C</a>：閉路数カウント（単純無向グラフ）→DFS, BFS, UnionFind</li>
 </ul>
 <h2>DP</h2>
 <ul>
