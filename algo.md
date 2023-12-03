@@ -34,6 +34,7 @@ Status: 初めて解いたときの状況<br>
 <h2><a href="#math">数学的問題</a></h2>
 <ul>
 	<li><a href="#prime">素数</a></li>
+	<li><a href="#yakusu">約数</a></li>
 	<li><a href="#math-other">その他</a></li>
 </ul>
 
@@ -97,10 +98,14 @@ Status: 初めて解いたときの状況<br>
 |<a href="https://atcoder.jp/contests/abc289/tasks/abc289_b">ABC289 B</a>|225|レ|一発自力AC|3|2023-11-28
 |<a href="https://atcoder.jp/contests/abc288/tasks/abc288_c">ABC288 C</a>|436|Don’t be cycle|一発自力AC|2|2023-11-24
 |<a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC287 C</a>|466|Path Graph?|一発自力AC|2|2023-11-24
+|<a href="https://atcoder.jp/contests/abc292/tasks/abc292_d">ABC292 D</a>|579|Unicyclic Components|一発自力AC|3|2023-12-01
 |<a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>|663|Change Usernames|なんとかAC|4|2023-11-22
+|<a href="https://atcoder.jp/contests/abc088/tasks/abc088_d">ABC088 D</a>|999|Grid Repainting|自力一発AC|4|2023-12-03
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_e">ABC284 E</a>|1043|Count Simple Paths|なんとかAC|4|2023-11-23
 |<a href="https://atcoder.jp/contests/abc075/tasks/abc075_d">ABC075 d</a>|1067|Bridge|自力一発AC|3|2023-11-27
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_e">ABC286 E</a>|1128|Souvenir|なんとかAC|4|2023-11-24
+|<a href="https://atcoder.jp/contests/abc299/tasks/abc299_e">ABC299 E</a>|1262|Nearest Black Vertex|解説見てAC|6|2023-12-03
+|<a href="https://atcoder.jp/contests/abc292/tasks/abc292_e">ABC292 E</a>|1272|Transitivity|解説見てAC|6|2023-12-01
 |<a href="https://atcoder.jp/contests/abc289/tasks/abc289_e">ABC289 E</a>|1318|Swap Places|解説見てAC|6|2023-11-29
 
 
@@ -125,6 +130,12 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_d">ABC284 D</a>|658|Happy New Year 2023|解説見てAC|6|2023-11-22
+
+<h2 id="yakusu">約数</h2>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc292/tasks/abc292_c">ABC292 C</a>|444|Four Variables|なんとかAC|5|2023-12-01
 
 <h2 id="math-other">その他</h2>
 
@@ -153,6 +164,7 @@ Status: 初めて解いたときの状況<br>
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc221/tasks/abc221_d">ABC221 D</a>|832|Online games|自力一発AC|2|2023-11-22
 |<a href="https://atcoder.jp/contests/abc278/tasks/abc278_e">ABC278 E</a>|996|Grid Filling|解説見てAC|7|2023-12-01
+|<a href="https://atcoder.jp/contests/typical90/tasks/typical90_ab">競プロ典型-028</a>|-|Cluttered Paper|解説見てAC|7|2023-12-01
 
 <h2 id="string">文字列操作</h2>
 <h3 id="kakko">カッコ列系</h3>
