@@ -81,6 +81,7 @@ Status: 初めて解いたときの状況<br>
 |<a href="https://atcoder.jp/contests/abc289/tasks/abc289_d">ABC289 D</a>|551|Step Up Robot|一発自力AC|3|2023-11-28
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_d">ABC286 D</a>|607|Money in Hand|一発自力AC|2|2023-11-24
 |<a href="https://atcoder.jp/contests/abc266/tasks/abc266_d">ABC266 D</a>|840|Snuke Panic (1D)|一発自力AC|3|2023-11-25
+|<a href="https://atcoder.jp/contests/abc271/tasks/abc271_d">ABC271 D</a>|886|Flip and Adjust|一発自力AC|3|2023-12-04
 
 <h2 id="dp-count">数え上げ</h2>
 
@@ -142,6 +143,7 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc330/tasks/abc330_c">ABC330 C</a>|519|Minimize Abs 2|まあAC|4|2023-11-25
+|<a href="https://atcoder.jp/contests/typical90/tasks/typical90_cg">競プロ典型-085</a>|-|Multiplication 085|自力AC|4|2023-12-04
 
 
 
