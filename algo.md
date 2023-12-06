@@ -101,10 +101,12 @@ Status: 初めて解いたときの状況<br>
 |<a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC287 C</a>|466|Path Graph?|一発自力AC|2|2023-11-24
 |<a href="https://atcoder.jp/contests/abc292/tasks/abc292_d">ABC292 D</a>|579|Unicyclic Components|一発自力AC|3|2023-12-01
 |<a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>|663|Change Usernames|なんとかAC|4|2023-11-22
+|<a href="https://atcoder.jp/contests/abc079/tasks/abc079_d">ABC079 D</a>|949|Grid Repainting|解説見てAC|6|2023-12-05
 |<a href="https://atcoder.jp/contests/abc088/tasks/abc088_d">ABC088 D</a>|999|Grid Repainting|自力一発AC|4|2023-12-03
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_e">ABC284 E</a>|1043|Count Simple Paths|なんとかAC|4|2023-11-23
 |<a href="https://atcoder.jp/contests/abc075/tasks/abc075_d">ABC075 d</a>|1067|Bridge|自力一発AC|3|2023-11-27
 |<a href="https://atcoder.jp/contests/abc286/tasks/abc286_e">ABC286 E</a>|1128|Souvenir|なんとかAC|4|2023-11-24
+|<a href="https://atcoder.jp/contests/abc328/tasks/abc328_e">ABC328 E</a>|1160|Modulo MST|他者コード見てAC|6|2023-12-06
 |<a href="https://atcoder.jp/contests/abc299/tasks/abc299_e">ABC299 E</a>|1262|Nearest Black Vertex|解説見てAC|6|2023-12-03
 |<a href="https://atcoder.jp/contests/abc292/tasks/abc292_e">ABC292 E</a>|1272|Transitivity|解説見てAC|6|2023-12-01
 |<a href="https://atcoder.jp/contests/abc289/tasks/abc289_e">ABC289 E</a>|1318|Swap Places|解説見てAC|6|2023-11-29
@@ -131,6 +133,7 @@ Status: 初めて解いたときの状況<br>
 |Problem|Diff|Problem name|Status|体感難易度|最終提出日|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc284/tasks/abc284_d">ABC284 D</a>|658|Happy New Year 2023|解説見てAC|6|2023-11-22
+|<a href="https://atcoder.jp/contests/abc096/tasks/abc096_d">ABC096 D</a>|1226|Five, Five Everywhere|解説見てAC|6|2023-12-06
 
 <h2 id="yakusu">約数</h2>
 
@@ -225,6 +228,8 @@ Status: 初めて解いたときの状況<br>
 	<li><a href="https://atcoder.jp/contests/abc285/tasks/abc285_d">ABC285 D</a>：閉路検出（単純無向グラフ）→DFS, BFS, UnionFind</li>
 	<li><a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC287 C</a>：パスグラフ判定（単純無向グラフ）→DFS, BFS, UnionFind</li>
 	<li><a href="https://atcoder.jp/contests/abc287/tasks/abc287_c">ABC288 C</a>：閉路数カウント（単純無向グラフ）→DFS, BFS, UnionFind</li>
+	<li><a href="https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_e">全点対最短経路問題</a>：ワーシャルフロイド</li>
+	<li><a href="https://atcoder.jp/contests/abc079/tasks/abc079_d">ABC079 D</a>：ワーシャルフロイド</li>
 </ul>
 <h2>DP</h2>
 <ul>
