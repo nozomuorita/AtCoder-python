@@ -53,6 +53,7 @@ Status: 初めて解いたときの状況<br>
 	<li><a href="#multiset">multiset</a></li>
 	<li><a href="#mex">MEX</a></li>
 	<li><a href="#topological">トポロジカルソート</a></li>
+	<li><a href="#itertools">itertools</a></li>
 </ul>
 
 
@@ -65,6 +66,7 @@ Status: 初めて解いたときの状況<br>
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc330/tasks/abc330_c">ABC330 C</a>|519|Minimize Abs 2|まあAC|4|2023-11-25
 |<a href="https://atcoder.jp/contests/abc189/tasks/abc189_c">ABC189 C</a>|565|Mandarin Orange|方針を見てAC|5|2023-11-21
+|<a href="https://atcoder.jp/contests/abc236/tasks/abc236_d">ABC236 D</a>|1190|Dance|他者コードを見てAC|7|2023-12-07
 
 <h2 id="bit-brute">bit全探索</h2>
 
@@ -216,6 +218,11 @@ Status: 初めて解いたときの状況<br>
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |<a href="https://atcoder.jp/contests/abc291/tasks/abc291_e">ABC291 E</a>|1069|Find Permutation|解説見てAC|7|2023-11-30
 
+<h2 id="itertools">itertools</h2>
+
+|Problem|Diff|Problem name|Status|体感難易度|最終提出日|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|<a href="https://atcoder.jp/contests/abc264/tasks/abc264_c">ABC264 C</a>|758|Matrix Reducing|自力一発AC|3|2023-12-07
 
 
 
@@ -235,4 +242,9 @@ Status: 初めて解いたときの状況<br>
 <ul>
 	<li><a href="https://atcoder.jp/contests/abc286/tasks/abc286_d">ABC286 D</a>：基礎DP（コイン問題）</li>
 	<li><a href="https://atcoder.jp/contests/abc289/tasks/abc289_d">ABC289 D</a>：基礎DP（階段問題）</li>
+</ul>
+
+<h2>その他</h2>
+<ul>
+	<li><a href="https://atcoder.jp/contests/abc286/tasks/abc236_d">ABC236 D</a>：2人ペアを全探索</li>
 </ul>
