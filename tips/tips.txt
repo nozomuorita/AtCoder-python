@@ -1,0 +1,3 @@
+・Set型について
+  要素の削除はremoveかdiscard
+  removeは存在しない要素へのアクセスでkey errorがでる、discardは出ない
