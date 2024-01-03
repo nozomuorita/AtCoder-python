@@ -1,0 +1,1 @@
+print(s) if len(s:=input())==2 else print(s[::-1])
