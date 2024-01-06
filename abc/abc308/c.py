@@ -1,5 +1,3 @@
-# pythonで提出
-
 from collections import defaultdict
 from decimal import Decimal
 N = int(input())
