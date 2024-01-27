@@ -36,6 +36,12 @@
 			"map(int, input().split())$1",
 		],
 	},
+	"map_input_2": {
+		"prefix": "mp-1",
+		"body": [
+			"map(lambda x:x-1, map(int, input().split()))$1",
+		],
+	},
 	"map_input_str": {
 		"prefix": "mps",
 		"body": [
