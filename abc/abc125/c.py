@@ -1,6 +1,7 @@
+from math import gcd
 #####segfunc#####
 def segfunc(x, y):
-    return x^y
+    return gcd(x, y)
 #################
 
 #####ide_ele#####
@@ -65,17 +66,14 @@ class SegTree:
             l >>= 1
             r >>= 1
         return res
-
-n, q = map(int, input().split())
+    
+n = int(input())
 a = list(map(int, input().split()))
 z = SegTree(a, segfunc, ide_ele)
 
-for i in range(q):
-    t, x, y = map(int, input().split())
-    if t==1:
-        x -= 1
-        z.update(x, z.tree[z.num+x]^y)
-    else:
-        x -= 1; y -= 1
-        ans = z.query(x, y+1)
-        print(ans)
+ans = 0
+for i in range(n):
+    score = gcd(z.query(0, i), z.query(i+1, z.num))
+    ans = max(ans, score)
+
+print(ans)

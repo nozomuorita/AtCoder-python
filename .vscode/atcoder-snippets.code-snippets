@@ -203,6 +203,25 @@
 					"\t\treturn '\\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())",		
 				]
 	},
+	"atcoder-lazysegtree": {
+		"prefix": "atcoder-lazysegtree",
+		"body": [
+			"from atcoder.lazysegtree import LazySegTree\n",
+			"# 区間演算op",
+			"def op(data1, data2):"
+				"\treturn max(data1, data2)\n",
+			"# opの単位元 op(data1, e) = data1",
+			"e = -float(\"Inf\")\n",
+			"# lazyをdataに作用させる",
+			"def mapping(lazy_upper, data_lower):"
+				"\treturn data_lower + lazy_upper\n",
+			"# lazyをlazyに作用させる",
+			"def composition(lazy_upper, lazy_lower):",
+				"\treturn lazy_upper + lazy_lower\n",
+			"# mapping(_id, data_lower) = data_lower",
+			"_id = 0",
+		]
+	},
 
 
 }
