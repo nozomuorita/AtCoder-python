@@ -219,7 +219,8 @@
 			"def composition(lazy_upper, lazy_lower):",
 				"\treturn lazy_upper + lazy_lower\n",
 			"# mapping(_id, data_lower) = data_lower",
-			"_id = 0",
+			"_id = 0\n",
+			"z = LazySegTree(op, e, mapping, composition, _id, lst)",
 		]
 	},
 
