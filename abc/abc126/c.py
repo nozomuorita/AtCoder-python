@@ -1,26 +1,16 @@
-from math import log2
-def ceil_div(x, y): return -(-x//y)
 n, k = map(int, input().split())
 
-two = 0
-cnt = 0
+# 出た目がk以上である場合(その時点で勝ち)
+ans = max(0, n-k+1)/n
+
+# 出た目がk未満ならば、k以上になるまで(1/2)を引く必要がある
 for i in range(1, n+1):
-    if i>=k: cnt+=1; continue
-    tmp = ceil_div(log2(k/i)+1, 1)
-    two += pow(1/2, tmp-1)
+    if i>=k: break
+    score = i
+    num = 0
+    while score<k:
+        score *= 2
+        num += 1
+    ans += (1/n) * ((1/2)**num)
 
-print(((1/n)*two) + (cnt*(1/n)))
-
-# 別解
-# n, k = map(int, input().split())
-# ans = 0
-# for i in range(1, n+1):
-#     tmp = i
-#     v = 1/n
-#     while (tmp<k):
-#         tmp *= 2
-#         v /= 2
-    
-#     ans += v
-
-# print(ans)
+print(ans)

@@ -1,11 +1,12 @@
 s = input()
-s1, s2 = s[:2], s[2:]
+yy = int(s[:2])
+mm = int(s[2:])
 
-ym, my = False, False
-if ("00"<=s1<="99") and ("01"<=s2<="12"): ym=True
-if ("01"<=s1<="12") and ("00"<=s2<="99"): my=True
-
-if ym and my: print("AMBIGUOUS")
-elif ym: print("YYMM")
-elif my: print("MMYY")
-else: print("NA")
+if 1<=yy<=12 and 1<=mm<=12:
+    print("AMBIGUOUS")
+elif 1<=yy<=12:
+    print("MMYY")
+elif 1<=mm<=12:
+    print("YYMM")
+else:
+    print("NA")
