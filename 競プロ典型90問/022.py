@@ -1,12 +1,6 @@
-import math
+from math import gcd
 a, b, c = map(int, input().split())
+g = gcd(gcd(a, b), c)
 
-# 最大公約数
-g = math.gcd(a, b)
-g = math.gcd(g, c)
-
-ans = 0
-for i in [a, b, c]:
-    ans += (i//g) - 1
-
+ans = ((a//g)-1) + ((b//g)-1) + ((c//g)-1)
 print(ans)
