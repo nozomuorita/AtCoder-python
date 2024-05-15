@@ -1,21 +1,14 @@
-from collections import defaultdict
+from bisect import bisect_left, bisect_right, insort_left, insort_right
 n = int(input())
-a  =list(map(int, input().split()))
+a = sorted(list(map(int, input().split())))
 
-d = defaultdict(int)
-for i in a: d[i]+=1
-
-keys = sorted(d.keys())
-d2 = defaultdict(int)
-for i in range(len(keys)):
-    if i==0: d2[keys[i]]=0
-    else: d2[keys[i]]=d2[keys[i-1]]+d[keys[i-1]]
-    
 ans = 0
+
 for i in range(n):
-    small = d2[a[i]]
-    big = n-small-d[a[i]]
+    mid = a[i]
+    left = bisect_left(a, mid)
+    right = bisect_right(a, mid)
     
-    ans += small*big
+    ans += left*(n-right)
 
 print(ans)

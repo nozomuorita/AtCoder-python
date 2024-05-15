@@ -1,24 +1,20 @@
-from collections import defaultdict
 n = int(input())
-s = [input() for _ in range(n)]
+s = []
+for i in range(n):
+    s.append(input())
 
-ans = 10**18
-
-# 数字iを揃える場合を考える
+ans = float("inf")
+# 数字iを止める
 for i in range(10):
-    d = defaultdict(int)
-    for j in s:
-        idx = j.index(str(i))
-        d[idx] += 1
-        
-    mx, idx = 1, -1
-    for key in list(d.keys()):
-        if d[key]>mx: mx=d[key]; idx=key
-        elif d[key]==mx and key>idx: idx=key
+    idx = [0]*10
+    for j in range(n):
+        k = s[j].index(str(i))
+        idx[k] += 1
     
-    if mx==1: ans=min(ans, idx)
-    else:
-        t = (mx-1)*10 + idx
-        ans = min(ans, t)
-        
+    score = 0
+    for j in range(10):
+        score = max(score, j+(idx[j]-1)*10)
+    
+    ans = min(ans, score)
+
 print(ans)
