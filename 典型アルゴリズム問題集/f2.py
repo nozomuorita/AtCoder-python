@@ -1,3 +1,4 @@
+"""最小全域木(クラスカル法)"""
 from collections import defaultdict
 class UnionFind():
     def __init__(self, n):
@@ -47,30 +48,22 @@ class UnionFind():
     # ルート要素: [そのグループに含まれる要素のリスト]を文字列で返す
     def __str__(self):
         return '\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())
-
-n = int(input())
+    
+n, m = map(int, input().split())
 uf = UnionFind(n)
-x, y = [], []
-for i in range(n):
-    _x, _y = map(int, input().split())
-    x.append((_x, i))
-    y.append((_y, i))
-
-x.sort()
-y.sort()
 
 edges = []
-for i in range(n-1):
-    edges.append((x[i+1][0]-x[i][0], x[i][1], x[i+1][1]))
-    edges.append((y[i+1][0]-y[i][0], y[i][1], y[i+1][1]))
+for i in range(m):
+    u, v, c = map(int, input().split())
+    edges.append((c, u, v))
 
 edges.sort()
+cost = 0
 
-ans = 0
-for edge in edges:
-    d, u, v = edge
+for e in edges:
+    c, u, v = e
     if not uf.same(u, v):
-        ans += d
+        cost += c
         uf.union(u, v)
-    
-print(ans)
+
+print(cost)
