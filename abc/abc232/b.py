@@ -1,19 +1,11 @@
-s=list(input())
-t=list(input())
-s_ord=[]
-t_ord=[]
+s = input()
+t = input()
 
-# 文字コードの差分が等しいならYes
+s2 = [ord(i)-ord("a") for i in s]
+t2 = [ord(i)-ord("a") for i in t]
+
+dist = []
 for i in range(len(s)):
-    s_ord.append(ord(s[i]))
-    t_ord.append(ord(t[i]))
+    dist.append(((t2[i]+26)-s2[i])%26)
 
-dist=[]
-for i in range(len(s)):
-    tmp=(s_ord[i]-t_ord[i])%26
-    dist.append(tmp)
-
-if len(set(dist))==1:
-    print('Yes')
-else:
-    print('No')
+print('Yes') if len(set(dist))==1 else print('No')
